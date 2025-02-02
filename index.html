@@ -11,69 +11,80 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Aswome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <style>
         .sora-font {
-  font-family: "Sora", serif;
-  font-style: normal;
-}
+            font-family: "Sora", serif;
+            font-style: normal;
+        }
     </style>
 </head>
 
-<body class="sora-font">
+<body class="sora-font container">
     <!-- Header Section -->
     <header>
         <nav>
             <!-- container -->
-            <div class="container mx-auto lg:px-4 bg-[#FFF9F4] grid grid-cols-3">
+            <div
+                class=" container mx-auto  bg-[#FFF9F4] grid grid-cols-2 lg:grid-cols-3 border-b-2 border-b-gray-600 border-solid lg:border-none">
                 <div class="mx-auto flex items-center gap-4">
                     <img src="c1-assets/logo-header.png" alt="">
-                    <h1 class="font-semibold text-lg">Browse
-                    <span class="text-yellow-300">4</span>
-                    Pets</h1>
+                    <h1 class="hidden lg:inline lg:font-semibold lg:text-lg ">Browse
+                        <span class=" text-yellow-300">4</span>
+                        Pets
+                    </h1>
                 </div>
-                <div class=" flex items-center gap-8 text-lg ">
+                <div class="hidden lg:flex lg:items-center lg:gap-8 lg:text-lg ">
                     <a href="">Find a pet</a>
                     <a href="">Breeds</a>
                     <a href="">Contact us</a>
-
                 </div>
-                <div class="my-3 flex justify-center items-center gap-5 text-lg" >
+                <div class="hidden lg:my-3 lg:flex lg:justify-center lg:items-center lg:gap-5 lg:text-lg">
                     <i class="fa-regular fa-bell text-black"></i>
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <button class="border-solid px-4 border-2 border-yellow-500 rounded-lg">Login</button>
                     <button class="border-solid px-4 border-2  rounded-lg bg-yellow-300">Register</button>
                 </div>
-
-            </div>
-
-
-
-
-
-            <!-- <div class="na bg-blue-500 ">
-                <div>
-                    <img src="c1-assets/logo-header.png" alt="">
-                     <h2>Browse4Pets</h2>
+                <!-- Hamburger Icon -->
+                <div class="navbar-end justify-self-end lg:hidden">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Find a pet</a></li>
+                            <li><a>Breeds</a></li>
+                            <li><a>Contact us</a></li>
+                        </ul>
+                    </div>
                 </div>
-                    
-                    <ul class="flex" >
-                      <li><a>Homepage</a></li>
-                      <li><a>Portfolio</a></li>
-                      <li><a>About</a></li>
-                    </ul>
-                 
-                
-            </div> -->
+            </div>
         </nav>
 
     </header>
     <!-- Main Section -->
-    <main>
+    <main class="mx-36">
+        <!-- Pet Section -->
+        <section class="bg-[url(c1-assets/cat-big.png)]   bg-contain bg-left-bottom  lg:bg-contain bg-no-repeat lg:bg-left-bottom ">
+            
+            <h1 class="text-lg lg:text-4xl font-bold lg:my-8">Pamper Your Pet,<br> Because They Deserve <br> the Best</h1>
+            <p class="text-sm lg:text-base font-normal text-gray-500 lg:my-8">Discover a world of treats, toys, and <br> essentials
+                handpicked for your furry <br>friends. Shop now and make tails wag with <br>joy!</p>
+            <button class="  border-solid px-4 py-2 border-2  rounded-lg bg-yellow-300 mb-20 lg:mb-40">Find a pet</button>
+           
+        
+        </section>
 
     </main>
     <!-- Footer Section -->
